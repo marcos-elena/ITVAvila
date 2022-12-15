@@ -3,6 +3,7 @@ package com.marcos.presentation;
 import com.iesam.itvavila.demo.presentation.DemoMain;
 import com.marcos.domain.models.Camion;
 import com.marcos.domain.models.Coche;
+import com.marcos.domain.models.Inspeccion;
 import com.marcos.domain.models.Propietario;
 
 public class Main {
@@ -34,5 +35,12 @@ public class Main {
         coche.setColor("Rojo");
         coche.setAnnoMatriculacion("2020");
         coche.setNumeroPuertas(2);
+
+        Inspeccion inspeccion = new Inspeccion();
+        inspeccion.setCodigo(1);
+        inspeccion.setFecha("10/10/2022");
+        inspeccion.setResultado(true);
+        inspeccion.setVehiculo(camion);
+        inspeccion.setPropietario(propietario);
     }
 }
