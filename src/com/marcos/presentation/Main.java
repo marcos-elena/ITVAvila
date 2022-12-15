@@ -42,5 +42,11 @@ public class Main {
         inspeccion.setResultado(true);
         inspeccion.setVehiculo(camion);
         inspeccion.setPropietario(propietario);
+
+        System.out.println("codigo"+inspeccion.getCodigo());
+        System.out.println("fecha"+inspeccion.getFecha());
+        System.out.println("resultado"+inspeccion.getResultado());
+        System.out.println("vehiculo"+inspeccion.getVehiculo());
+        System.out.println("propietario"+inspeccion.getPropietario());
     }
 }
